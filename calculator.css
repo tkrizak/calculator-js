@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1600px;
+  margin-inline: auto;
+  padding: 16px;
+}
+
+.calculator-grid {
+  display: grid;
+  max-width: 350px;
+  padding: 1rem;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    'calculation calculation calculation calculation'
+    '1 2 3 4'
+    '1 2 3 4'
+    '1 2 3 4'
+    '1 2 3 4';
+  border: 1px solid white;
+}
+
+.calculation {
+  margin-bottom: 1rem;
+  justify-self: start;
+  font-size: 2.5rem;
+  grid-area: calculation;
+}
+
+.calculator-button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  height: 60px;
+  width: 60px;
+  font-size: 26px;
+  border-radius: 60px;
+  border: 0;
+}
+
+.orange-button {
+  background-color: rgb(254, 160, 10);
+}
+
+.clear-button {
+  font-size: 1rem;
+}
